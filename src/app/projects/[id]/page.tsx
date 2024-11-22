@@ -1,4 +1,3 @@
-import { use } from 'react'
 import Link from 'next/link'
 import Slideshow, { MediaItem } from './Slideshow'
 import Sidebar from './Sidebar'
