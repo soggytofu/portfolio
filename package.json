@@ -1,8 +1,8 @@
 {
-  "homepage": "https://soggytofu.github.io",
-  "name": "regispak-portfolio",
-  "version": "0.1.0",
-  "private": true,
+  "homepage": "https://soggytofu.github.io/portfolio",
+  "name": "portfolio",
+  "version": "0.6.0",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
