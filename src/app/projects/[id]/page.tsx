@@ -1,7 +1,7 @@
 import { use } from 'react'
 import Link from 'next/link'
 import Slideshow, { MediaItem } from './Slideshow'
-import Sidebar from './sidebar'
+import Sidebar from './Sidebar'
 import { ChevronRight } from 'lucide-react'
 
 // Sample project data (in a real app, this would come from a database or API)
