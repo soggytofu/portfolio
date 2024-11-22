@@ -82,6 +82,7 @@ const projects = [
     projectUrl: "https://example.com/ecommerce-platform"
   },
 ]
+
 export async function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id.toString(),
@@ -89,11 +90,12 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-  params: { id: string }
+  params: Promise<{ id: string }>
 }
 
-export default function ProjectPage({ params }: Props) {
-  const project = projects.find(p => p.id === parseInt(params.id))
+export default async function ProjectPage({ params }: Props) {
+  const resolvedParams = await params
+  const project = projects.find(p => p.id === parseInt(resolvedParams.id))
 
   if (!project) {
     return <div className="min-h-screen bg-sky-950 text-white flex items-center justify-center">Project not found</div>
