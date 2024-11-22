@@ -88,7 +88,11 @@ export async function generateStaticParams() {
   }))
 }
 
-export default function ProjectPage({ params }: { params: { id: string } }) {
+type Props = {
+  params: { id: string }
+}
+
+export default function ProjectPage({ params }: Props) {
   const project = projects.find(p => p.id === parseInt(params.id))
 
   if (!project) {
@@ -136,4 +140,3 @@ export default function ProjectPage({ params }: { params: { id: string } }) {
     </div>
   )
 }
-
