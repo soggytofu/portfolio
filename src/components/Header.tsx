@@ -46,7 +46,7 @@ export function Header() {
           <Link href="/about" className="flex items-center space-x-2 hover:text-blue-400 transition-colors">
             <span className="text-lg font-semibold">Regis Pak</span>
             <Image
-              src="/images/RegisSakuraPFP.jpg"
+              src="./images/RegisSakuraPFP.jpg"
               alt="Regis Pak"
               width={40}
               height={40}

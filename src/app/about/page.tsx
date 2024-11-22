@@ -24,7 +24,7 @@ export default function AboutPage() {
       {/* Background Banner Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/images/DB.png"
+          src="./images/DB.png"
           alt="Profile Banner"
           layout="fill"
           objectFit="cover"
@@ -77,7 +77,7 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                   <div className="relative h-48 rounded-lg overflow-hidden">
                     <Image
-                      src="/images/DB.png"
+                      src="./images/DB.png"
                       alt="Additional Image 1"
                       layout="fill"
                       objectFit="cover"
@@ -85,7 +85,7 @@ export default function AboutPage() {
                   </div>
                   <div className="relative h-48 rounded-lg overflow-hidden">
                     <Image
-                      src="/images/DB.png"
+                      src="./images/DB.png"
                       alt="Additional Image 2"
                       layout="fill"
                       objectFit="cover"
@@ -115,7 +115,7 @@ export default function AboutPage() {
                 {/* Additional Image Spot */}
                 <div className="relative h-64 rounded-lg overflow-hidden mb-8">
                   <Image
-                    src="/images/DB.png"
+                    src="./images/DB.png"
                     alt="Additional Image 3"
                     layout="fill"
                     objectFit="cover"
