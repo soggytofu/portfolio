@@ -5,7 +5,7 @@ export function Banner() {
     // Change here if u want to adjust banner
     <div className="absolute top-0 left-0 right-0 h-[450px] z-0"> {/* Increased height to 600px */}
       <Image
-        src="/images/DB.png"
+        src="./images/DB.png"
         alt="Banner"
         layout="fill"
         objectFit="cover"
