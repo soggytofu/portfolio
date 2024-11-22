@@ -4,7 +4,7 @@ import Image from 'next/image'
 const personalInfo = {
   name: "Regis Pak",
   location: "San Clemente, CA",
-  avatar: "/images/RegisSakuraPFP.jpg",
+  avatar: "./images/RegisSakuraPFP.jpg",
   bio: "UCSC Senio Studying Computer Science Game Design",
 }
 

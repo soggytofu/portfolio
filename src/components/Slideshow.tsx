@@ -10,7 +10,7 @@ const projects = [
   {
     id: 1,
     name: "Malisense",
-    image: "/images/RegisSakura.jpg",
+    image: "./images/RegisSakura.jpg",
     description: "A game about exploring the dungeon to dodge monsters based on the 5 senses",
     tags: ["Leadership", "Unity", "C#"],
     link: "/projects/1",
@@ -18,7 +18,7 @@ const projects = [
   {
     id: 2,
     name: "TBD",
-    image: "/images/DB.png",
+    image: "./images/DB.png",
     description: "Game Project currently in developement",
     tags: ["Leadership", "C++", "FUN"],
     link: "/projects/2",

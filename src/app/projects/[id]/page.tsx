@@ -8,9 +8,9 @@ const projects = [
   {
     id: 1,
     name: "Malisense",
-    banner: "/images/DB.png",
+    banner: "./images/DB.png",
     media: [
-      { type: 'image', src: "/images/DB.png" },
+      { type: 'image', src: "./images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -23,9 +23,9 @@ const projects = [
   {
     id: 2,
     name: "TBD",
-    banner: "/images/DB.png",
+    banner: "./images/DB.png",
     media: [
-      { type: 'image', src: "/images/DB.png" },
+      { type: 'image', src: "./images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -38,9 +38,9 @@ const projects = [
   {
     id: 3,
     name: "Wildfire Minigames",
-    banner: "/images/DB.png",
+    banner: "./images/DB.png",
     media: [
-      { type: 'image', src: "/images/DB.png" },
+      { type: 'image', src: "./images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -53,9 +53,9 @@ const projects = [
   {
     id: 4,
     name: "Chess Program and AI",
-    banner: "/images/DB.png",
+    banner: "./images/DB.png",
     media: [
-      { type: 'image', src: "/images/DB.png" },
+      { type: 'image', src: "./images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -68,9 +68,9 @@ const projects = [
   {
     id: 6,
     name: "Anime Song Retrevial",
-    banner: "/images/DB.png",
+    banner: "./images/DB.png",
     media: [
-      { type: 'image', src: "/images/DB.png" },
+      { type: 'image', src: "./images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],

@@ -2,17 +2,17 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const mainProjects = [
-  { id: 1, name: "Malisense", image: "/images/DB.png", tags: ["Leadership", "Unity", "C#"], bio: "GDA group game that is about exploring the dungeon avoid sense based monsters" },
-  { id: 2, name: "TBD Game", image: "/images/DB.png", tags: ["Leadership", "UNreal", "C++"], bio: "Small studio that is aimed at creating a portfolio game in Unreal" },
-  { id: 3, name: "Wildfire Minigame", image: "/images/DB.png", tags: ["Unity", "C++"], bio: "Small project for wildfire games" },
-  { id: 4, name: "Chess Program and AI", image: "/images/DB.png", tags: ["C++", "AI", "Algorithms"], bio: "Created a chess program alongside an AI that you can play against" },
-  // { id: 5, name: "Blockchain Voting System", image: "/images/DB.png", tags: ["Solidity", "Ethereum", "Web3.js"], bio: "Secure and transparent voting system using blockchain technology." },
+  { id: 1, name: "Malisense", image: "./images/DB.png", tags: ["Leadership", "Unity", "C#"], bio: "GDA group game that is about exploring the dungeon avoid sense based monsters" },
+  { id: 2, name: "TBD Game", image: "./images/DB.png", tags: ["Leadership", "UNreal", "C++"], bio: "Small studio that is aimed at creating a portfolio game in Unreal" },
+  { id: 3, name: "Wildfire Minigame", image: "./images/DB.png", tags: ["Unity", "C++"], bio: "Small project for wildfire games" },
+  { id: 4, name: "Chess Program and AI", image: "./images/DB.png", tags: ["C++", "AI", "Algorithms"], bio: "Created a chess program alongside an AI that you can play against" },
+  // { id: 5, name: "Blockchain Voting System", image: "./images/DB.png", tags: ["Solidity", "Ethereum", "Web3.js"], bio: "Secure and transparent voting system using blockchain technology." },
 ]
 
 const sideProjects = [
-  { id: 6, name: "Anime Song Retrevial", image: "/images/DB.png", tags: ["Learning", "Python"], bio: "Real-time weather information with location-based forecasts." },
-  // { id: 7, name: "Task Manager CLI", image: "/images/DB.png", tags: ["Python", "Click"], bio: "Command-line interface for efficient task management." },
-  // { id: 8, name: "Personal Blog", image: "/images/DB.png", tags: ["Next.js", "MDX"], bio: "A personal blog built with Next.js and MDX for content management." },
+  { id: 6, name: "Anime Song Retrevial", image: "./images/DB.png", tags: ["Learning", "Python"], bio: "Real-time weather information with location-based forecasts." },
+  // { id: 7, name: "Task Manager CLI", image: "./images/DB.png", tags: ["Python", "Click"], bio: "Command-line interface for efficient task management." },
+  // { id: 8, name: "Personal Blog", image: "./images/DB.png", tags: ["Next.js", "MDX"], bio: "A personal blog built with Next.js and MDX for content management." },
 ]
 
 function ProjectGrid({ projects, title }: { projects: typeof mainProjects, title: string }) {
