@@ -90,9 +90,12 @@ export async function generateStaticParams() {
 
 type Props = {
   params: { id: string }
+  searchParams: { [key: string]: string | string[] | undefined }
 }
 
-export default function ProjectPage({ params }: Props) {
+export default async function ProjectPage({ params, searchParams }: Props) {
+  await new Promise(resolve => setTimeout(resolve, 0))
+
   const project = projects.find(p => p.id === parseInt(params.id))
 
   if (!project) {
