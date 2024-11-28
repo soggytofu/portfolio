@@ -82,7 +82,6 @@ const projects = [
   },
 ]
 
-
 export async function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id.toString(),
@@ -91,10 +90,9 @@ export async function generateStaticParams() {
 
 type PageProps = {
   params: Promise<{ id: string }>
-  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-export default async function ProjectPage({ params, searchParams }: PageProps) {
+export default async function ProjectPage({ params }: PageProps) {
   const { id } = await params
   const project = projects.find(p => p.id === parseInt(id))
 
