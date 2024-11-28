@@ -10,7 +10,7 @@ const projects = [
     name: "Malisense",
     banner: "./images/DB.png",
     media: [
-      { type: 'image', src: "./images/DB.png" },
+      { type: 'image', src: "/images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -89,12 +89,11 @@ export async function generateStaticParams() {
 }
 
 type Props = {
-  params: Promise<{ id: string }>
+  params: { id: string }
 }
 
-export default async function ProjectPage({ params }: Props) {
-  const resolvedParams = await params
-  const project = projects.find(p => p.id === parseInt(resolvedParams.id))
+export default function ProjectPage({ params }: Props) {
+  const project = projects.find(p => p.id === parseInt(params.id))
 
   if (!project) {
     return <div className="min-h-screen bg-sky-950 text-white flex items-center justify-center">Project not found</div>
