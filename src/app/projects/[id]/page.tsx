@@ -8,7 +8,7 @@ const projects = [
   {
     id: 1,
     name: "Malisense",
-    banner: "./images/DB.png",
+    banner: "/images/DB.png",
     media: [
       { type: 'image', src: "/images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
@@ -23,9 +23,9 @@ const projects = [
   {
     id: 2,
     name: "TBD",
-    banner: "./images/DB.png",
+    banner: "/images/DB.png",
     media: [
-      { type: 'image', src: "./images/DB.png" },
+      { type: 'image', src: "/images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -38,9 +38,9 @@ const projects = [
   {
     id: 3,
     name: "Wildfire Minigames",
-    banner: "./images/DB.png",
+    banner: "/images/DB.png",
     media: [
-      { type: 'image', src: "./images/DB.png" },
+      { type: 'image', src: "/images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -53,9 +53,9 @@ const projects = [
   {
     id: 4,
     name: "Chess Program and AI",
-    banner: "./images/DB.png",
+    banner: "/images/DB.png",
     media: [
-      { type: 'image', src: "./images/DB.png" },
+      { type: 'image', src: "/images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -68,9 +68,9 @@ const projects = [
   {
     id: 6,
     name: "Anime Song Retrevial",
-    banner: "./images/DB.png",
+    banner: "/images/DB.png",
     media: [
-      { type: 'image', src: "./images/DB.png" },
+      { type: 'image', src: "/images/DB.png" },
       { type: 'youtube', src: "https://www.youtube.com/watch?v=dQw4w9WgXcQ" },
       { type: 'image', src: "/placeholder.svg" },
     ] as MediaItem[],
@@ -82,21 +82,21 @@ const projects = [
   },
 ]
 
+
 export async function generateStaticParams() {
   return projects.map((project) => ({
     id: project.id.toString(),
   }))
 }
 
-type Props = {
-  params: { id: string }
-  searchParams: { [key: string]: string | string[] | undefined }
+type PageProps = {
+  params: Promise<{ id: string }>
+  searchParams: Promise<{ [key: string]: string | string[] | undefined }>
 }
 
-export default async function ProjectPage({ params, searchParams }: Props) {
-  await new Promise(resolve => setTimeout(resolve, 0))
-
-  const project = projects.find(p => p.id === parseInt(params.id))
+export default async function ProjectPage({ params, searchParams }: PageProps) {
+  const { id } = await params
+  const project = projects.find(p => p.id === parseInt(id))
 
   if (!project) {
     return <div className="min-h-screen bg-sky-950 text-white flex items-center justify-center">Project not found</div>
@@ -143,3 +143,4 @@ export default async function ProjectPage({ params, searchParams }: Props) {
     </div>
   )
 }
+
